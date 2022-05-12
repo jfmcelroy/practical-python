@@ -4,6 +4,6 @@
 #A rubber ball is dropped from a height of 100 meters and each time it hits the ground, it bounces back up to 3/5 the height it fell
 #Print the first 10 bounces
 
-for i in range(10):
+for i in range(11):
     print(i,(3/5)**i * 100)
   

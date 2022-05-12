@@ -5,5 +5,5 @@
 #Print the first 10 bounces
 
 for i in range(11):
-    print(i,round((3/5)**i * 100,2))
+    print(i,round((3/5)**i * 100,4))
   

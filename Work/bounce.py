@@ -5,5 +5,5 @@
 #Print the first 10 bounces
 
 for i in range(10):
-    print(i,(3/5)^i * 100)
+    print(i,(3/5)**i * 100)
   

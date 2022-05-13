@@ -17,7 +17,7 @@ while principal > 0 and months < extra_payment_start_month: #watch out for edge 
     print('Month:',months,'|', 'Total paid:',round(total_paid,2)) # debugging
     months = months+1
     
-print('___________________________WHILE SWITCH___________________________') # debugging
+print('___________________________Extra payment starts___________________________') # debugging
 
 while principal > 0 and months >= extra_payment_start_month and months <= extra_payment_end_month: #watch out for edge cases
     principal = principal * (1+rate/12) - (payment+extra_payment)
@@ -25,7 +25,7 @@ while principal > 0 and months >= extra_payment_start_month and months <= extra_
     print('Month:',months,'|', 'Total paid:',round(total_paid,2)) # debugging
     months = months+1
     
-print('___________________________WHILE SWITCH___________________________') # debugging
+print('___________________________Extra payment ends___________________________') # debugging
     
 while principal > 0 and months > extra_payment_end_month: #watch out for edge cases
     principal = principal * (1+rate/12) - payment

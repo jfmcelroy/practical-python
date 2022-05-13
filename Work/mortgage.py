@@ -32,4 +32,5 @@ while principal > 0:
                 
     print('Month:',months,'|', 'Total paid:',round(total_paid,2),'|','Remaining principal:',round(principal,2))
 
-print('Total paid:', round(total_paid,2),'over',months-1,'months')
+print('Total paid:', round(total_paid,2),'over',months-1,'months') #is there a month-counting edge-case-problem for the overpaid-last-month?
+#the total_paid amount isn't what we'd expect from the negative remaining principal in non-adjusted program

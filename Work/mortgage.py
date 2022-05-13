@@ -14,13 +14,22 @@ extra_payment = float(input('Enter extra payment amount:'))
 
 while principal > 0:
     months = months+1
-    principal = principal * (1+rate/12) - payment
-    total_paid = total_paid + payment
+    if months >= extra_payment_start_month and months <= extra_payment_end_month: 
+        if payment+extra_payment <= principal:
+            principal = principal * (1+rate/12) - (payment+extra_payment)
+            total_paid = total_paid + (payment+extra_payment)
+        else: 
+            principal = 0 
+            total_paid: total_paid + principal
     
-    if months >= extra_payment_start_month and months <= extra_payment_end_month:
-        principal = principal - extra_payment
-        total_paid = total_paid + extra_payment
-        
+    else: 
+        if payment <= principal:
+            principal = principal * (1+rate/12) - payment
+            total_paid = total_paid + payment
+        else: 
+            principal = 0 
+            total_paid: total_paid + principal
+                
     print('Month:',months,'|', 'Total paid:',round(total_paid,2),'|','Remaining principal:',round(principal,2))
 
 print('Total paid:', round(total_paid,2),'over',months-1,'months')

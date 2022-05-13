@@ -18,4 +18,4 @@ while principal > 0: #do I need to specify anything about months?
     total_paid = total_paid + payment
     months = months+1
     
-print('Total paid', round(total_paid,2),'over',months,'months')
+print('Total paid:', round(total_paid,2),'over',months,'months')

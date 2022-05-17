@@ -19,16 +19,16 @@ while principal > 0:
             principal = principal * (1+rate/12) - (payment+extra_payment)
             total_paid = total_paid + (payment+extra_payment)
         else: 
-            principal = 0 
             total_paid: total_paid + principal
+            principal = 0
     
     else: 
         if payment <= principal:
             principal = principal * (1+rate/12) - payment
             total_paid = total_paid + payment
-        else: 
-            principal = 0 
+        else:
             total_paid: total_paid + principal
+            principal = 0
                 
     print('Month:',months,'|', 'Total paid:',round(total_paid,2),'|','Remaining principal:',round(principal,2))
 

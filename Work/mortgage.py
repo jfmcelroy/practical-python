@@ -30,6 +30,6 @@ while principal > 0:
             total_paid = total_paid + principal
             principal = 0
                 
-    print('Month:',months,'|', 'Total paid:',round(total_paid,2),'|','Remaining principal:',round(principal,2))
+    print('Month:',months,'|', 'Total paid:',round(total_paid,2),'|','Remaining principal:',round(principal,2)) #monthly table
 
-print('Total paid:', round(total_paid,2),'over',months-1,'months') 
+print(f'Total paid: {round(total_paid,2)} over {months-1} months') # final outcome

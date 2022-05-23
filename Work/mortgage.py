@@ -29,7 +29,8 @@ while principal > 0:
         else:
             total_paid = total_paid + principal
             principal = 0
-                
-    print('Month:',months,'|', 'Total paid:',round(total_paid,2),'|','Remaining principal:',round(principal,2)) #monthly table
+    
+    print(f'Month: {months} | Total paid: ${round(total_paid,2)} | Remaining principal: {round(principal,2)}') #monthly table
+    # print('Month:',months,'|', 'Total paid:',round(total_paid,2),'|','Remaining principal:',round(principal,2)) #old monthly table output
 
-print(f'Total paid: {round(total_paid,2)} over {months-1} months') # final outcome
+print(f'Total paid: ${round(total_paid,2)} over {months} months') # final outcome... should it print months-1?

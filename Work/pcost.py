@@ -12,4 +12,4 @@ with open('Data/portfolio.csv', 'rt') as f:
     
 round(total_cost,2)
     
-print("Total cost: ", total_cost)
+print(f'Total cost: ${total_paid:0.2f}')

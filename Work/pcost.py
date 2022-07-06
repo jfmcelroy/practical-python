@@ -17,7 +17,5 @@ def portfolio_cost(filename):
   return round(total_cost,2)
     
 file = 'Data/portfolio.csv' #change for user input
-
-portfolio_cost(file)
     
-print(f'Total cost: ${total_cost:0.2f}')
+print(f'Total cost: ${portfolio_cost(file):0.2f}')

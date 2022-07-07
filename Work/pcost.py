@@ -6,10 +6,10 @@ import csv
 
 def portfolio_cost(filename):
   total_cost = 0.00 
-  error_count = 0 # keep track of bad lines
+  error_count = 0 
   output = [total_cost, error_count]
 
-  with open(filename, 'rt') as f: #syntax for 'filename'
+  with open(filename, 'rt') as f: 
     rows = csv.reader(f)
     next(rows)
     for row in rows:

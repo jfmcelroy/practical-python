@@ -18,7 +18,7 @@ def portfolio_cost(filename):
       except ValueError:
         error_count += 1  
         
-  return [total_cost, error_count]
+  return (total_cost, error_count)
     
 file = 'Data/portfolio.csv' # Regular version - make sure only one of these two lines is commented out
 # file = 'Data/missing.csv' # Error version - make sure only one of these two lines is commented out

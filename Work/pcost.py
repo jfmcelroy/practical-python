@@ -7,7 +7,6 @@ import csv
 def portfolio_cost(filename):
   total_cost = 0.00 
   error_count = 0 
-  output = [total_cost, error_count]
 
   with open(filename, 'rt') as f: 
     rows = csv.reader(f)
@@ -19,7 +18,7 @@ def portfolio_cost(filename):
       except ValueError:
         error_count += 1  
         
-  return output
+  return [total_cost, error_count]
     
 file = 'Data/portfolio.csv' #change for user input
     

@@ -20,7 +20,8 @@ def portfolio_cost(filename):
         
   return [total_cost, error_count]
     
-file = 'Data/portfolio.csv' #change for user input
+# file = 'Data/portfolio.csv' # Regular version - make sure only one of these two lines is commented out
+file = 'Data/missing.csv' # Error version - make sure only one of these two lines is commented out
     
 print(f'Total cost: ${portfolio_cost(file)[0]:0.2f}')
 

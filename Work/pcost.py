@@ -23,6 +23,6 @@ def portfolio_cost(filename):
 # file = 'Data/portfolio.csv' # Regular version - make sure only one of these two lines is commented out
 file = 'Data/missing.csv' # Error version - make sure only one of these two lines is commented out
     
-print(f'Total cost: ${portfolio_cost(file)[0]:0.2f}')
+print(f'Total cost of {file}: ${portfolio_cost(file)[0]:0.2f}')
 
 print(f'{portfolio_cost(file)[1]} row(s) with value error')

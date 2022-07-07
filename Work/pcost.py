@@ -10,9 +10,12 @@ def portfolio_cost(filename):
   with open(filename, 'rt') as f: #syntax for 'filename'
     rows = csv.reader(f)
     next(rows)
-    for row in rows: 
-      cost = float(row[2]) #already float?
-      total_cost = total_cost + cost
+    for row in rows:
+      try:
+        cost = float(row[2]) #already float?
+        total_cost = total_cost + cost
+      except ValueError:
+        # any way to output this?
 
   return round(total_cost,2)
     

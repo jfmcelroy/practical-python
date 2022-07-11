@@ -17,11 +17,13 @@ def read_portfolio(filename):
         holding = (row[0], int(row[1]), float(row[2]))
         portfolio.append(holding)
       except ValueError:
-        error_count += 1  #need to output list/tuple from function for error_count to show up too
+        error_count += 1  
         
-  return portfolio
+  return (portfolio, error_count)
 
 file = 'Data/portfolio.csv'
 
-for r in read_portfolio(file):
+for r in read_portfolio(file)[0]:
   print(r)
+
+print(f'{read_portfolio(file)[1]} row(s) with value error')

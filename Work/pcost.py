@@ -10,11 +10,12 @@ def portfolio_cost(filename):
 
   with open(filename, 'rt') as f: 
     rows = csv.reader(f)
-    next(rows)
+    headers = next(rows)
     for row in rows:
       try:
-        cost = float(row[2]) #already float?
-        total_cost += cost
+        nshares = int(row[1])
+        price = float(row[2]) 
+        total_cost += nshares * price
       except ValueError:
         error_count += 1  
         

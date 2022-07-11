@@ -24,4 +24,4 @@ file = 'Data/portfolio.csv'
 read_portfolio(file)
 
 for r in portfolio:
-  print r
+  print(r)

@@ -23,7 +23,5 @@ def read_portfolio(filename):
 
 file = 'Data/portfolio.csv'
 
-read_portfolio(file)
-
-for r in portfolio:
+for r in read_portfolio(file):
   print(r)

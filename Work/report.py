@@ -2,6 +2,8 @@
 #
 # Exercise 2.4
 
+import csv
+
 def read_portfolio(filename):
   '''Computes the total cost (shares*price) of a portfolio file'''
   portfolio = [] 

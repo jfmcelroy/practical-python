@@ -5,6 +5,7 @@
 import csv
 
 def portfolio_cost(filename):
+  '''Computes the total cost (shares*price) of a portfolio file'''
   total_cost = 0.00 
   error_count = 0 
 

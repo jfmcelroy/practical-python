@@ -17,7 +17,7 @@ def read_portfolio(filename):
         holding = (row[0], int(row[1]), float(row[2]))
         portfolio.append(holding)
       except ValueError:
-        error_count += 1  
+        error_count += 1  #need to output list/tuple from function for error_count to show up too
         
   return portfolio
 

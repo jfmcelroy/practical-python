@@ -4,6 +4,7 @@
 # housing the read_prices() function
 
 import csv # may not need this
+from pprint import pprint # can we just write "import pprint"?
 
 def read_prices(filename):
   '''reads prices into a dictionary with stock names as keys'''

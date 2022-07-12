@@ -13,7 +13,7 @@ def read_prices(filename):
     rows = csv.reader(f)
     # headers = next(rows) # no headers in this file? 
     for row in rows:
-      if type(row[0]) = 'str' and ( type(row[1]) = 'float' or type(row[1]) = 'int'): 
+      if type(row[0]) == 'str' and ( type(row[1]) == 'float' or type(row[1]) == 'int'): 
         name = row[0]
         prices[name] = float(row[1]) # or is it prices['name'] ?
       else: # or more ifs?

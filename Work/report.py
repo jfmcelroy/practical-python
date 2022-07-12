@@ -27,8 +27,8 @@ def read_portfolio(filename):
 
 file = 'Data/portfolio.csv'
 
-#for r in read_portfolio(file)[0]:
-#  print(r)
-print(read_portfolio(file)[0]) 
+for r in read_portfolio(file)[0]:
+  print(r)
+#print(read_portfolio(file)[0]) 
 
 print(f'{read_portfolio(file)[1]} row(s) with value error')

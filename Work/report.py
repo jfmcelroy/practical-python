@@ -6,7 +6,7 @@ import csv
 
 def read_portfolio(filename):
   '''Computes the total cost (shares*price) of a portfolio file'''
-  portfolio = [] 
+  portfolio = [] #change from tuple to list?
   error_count = 0 
 
   with open(filename, 'rt') as f: 
@@ -14,8 +14,12 @@ def read_portfolio(filename):
     # headers = next(rows)
     for row in rows:
       try:
-        holding = (row[0], int(row[1]), float(row[2]))
-        portfolio.append(holding)
+        holding = {
+          'name': row[0], 
+          'shares': int(row[1]), 
+          'price': float(row[2])
+        }
+        portfolio.append(holding) 
       except ValueError:
         error_count += 1  
         
@@ -23,7 +27,8 @@ def read_portfolio(filename):
 
 file = 'Data/portfolio.csv'
 
-for r in read_portfolio(file)[0]:
-  print(r)
+#for r in read_portfolio(file)[0]:
+#  print(r)
+print(read_portfolio(file)[0]) 
 
 print(f'{read_portfolio(file)[1]} row(s) with value error')

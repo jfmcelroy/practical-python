@@ -14,7 +14,7 @@ def read_prices(filename):
     rows = csv.reader(f)
     # headers = next(rows) # no headers in this file? 
     for row in rows:
-      if isinstance(row[0],str) and ( isinstance(row[1],float) or isinstance(row[1],int)): 
+      if isinstance(row[0],str) == True: # and ( isinstance(row[1],float) or isinstance(row[1],int)): 
         name = row[0]
         prices[name] = float(row[1]) # or is it prices['name'] ?
       else: # or more ifs?

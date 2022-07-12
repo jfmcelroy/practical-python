@@ -3,6 +3,7 @@
 # Exercise 2.4
 
 import csv
+from pprint import pprint #should this go hear or nearer to where we use it?
 
 def read_portfolio(filename):
   '''Computes the total cost (shares*price) of a portfolio file'''
@@ -32,8 +33,9 @@ for r in read_portfolio(file)[0]:
   print(r)
 #print(read_portfolio(file)[0]) 
 
-for r in read_portfolio(file)[0]:
-  total += r['shares']*r['price']
+#for r in read_portfolio(file)[0]:
+#  total += r['shares']*r['price']
+pprint(portfolio)
   
 print(f'Total cost: ${total}')
 

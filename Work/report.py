@@ -29,13 +29,13 @@ def read_portfolio(filename):
 file = 'Data/portfolio.csv'
 total = 0.00
 
-for r in read_portfolio(file)[0]:
-  print(r)
-#print(read_portfolio(file)[0]) 
-
 #for r in read_portfolio(file)[0]:
-#  total += r['shares']*r['price']
-pprint(portfolio)
+#  print(r)
+#print(read_portfolio(file)[0]) 
+pprint(read_portfolio(file)[0]) 
+
+for r in read_portfolio(file)[0]:
+  total += r['shares']*r['price']
   
 print(f'Total cost: ${total}')
 

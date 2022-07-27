@@ -1,7 +1,6 @@
 # pcost.py
 #
 # Exercise 1.27, 1.32
-#fake change
 
 import csv
 
